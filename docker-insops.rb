@@ -7,7 +7,7 @@ class DockerInsops < Formula
   bottle :unneeded
 
   def install
-    system "gem install highline"
+    system "gem", "install", "highline", "--version", "~> 1.7.8", "--install-dir", prefix
     bin.install "docker-insops"
   end
 end
