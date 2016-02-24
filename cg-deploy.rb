@@ -14,6 +14,10 @@ class CgDeploy < Formula
     system "gem", "install", "aws-keychain-util", "--install-dir", prefix
     bin.install "cg-deploy"
   end
+  
+  def caveats
+    "cg-deploy depends on aws-creds and dinghy, remember to setup both before running cg-deploy!"
+  end
 
   test do
     system "#{bin}/cg-deploy", "version"
