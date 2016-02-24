@@ -11,7 +11,6 @@ class CgDeploy < Formula
   bottle :unneeded
 
   def install
-    system "gem", "install", "aws-keychain-util", "--install-dir", prefix
     bin.install "cg-deploy"
   end
   
