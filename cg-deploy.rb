@@ -1,7 +1,7 @@
 class CgDeploy < Formula
   desc "Deploy script for Cloudgate"
   homepage "https://gerrit.instructure.com/plugins/gitblit/blob/?f=README.md&r=cg-deploy.git&h=dev/1.0"
-  url "gerrit:cg-deploy", :branch => "dev/v1.0", :using => :git
+  url "gerrit:cg-deploy", :branch => "dev/1.0", :using => :git
   version '1.0'
 
   depends_on "docker-insops"
