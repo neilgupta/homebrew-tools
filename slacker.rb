@@ -2,7 +2,8 @@ class Slacker < Formula
   desc "Simple command line utility for posting messages to Slack"
   homepage "https://github.com/neilgupta/slacker"
   url "https://github.com/neilgupta/slacker/releases/download/1.1/slacker-1.1.tar.gz"
-  sha256 "2f6afaa09d77dc5b76fa05ba014d7855e3bc377b"
+  head "https://github.com/neilgupta/slacker.git", :branch => :master, :using => :git
+  version '1.1'
 
   bottle :unneeded
 
